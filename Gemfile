@@ -5,6 +5,9 @@ source 'https://rubygems.org'
 gem "middleman", "~>3.3.10"
 
 gem 'middleman-gh-pages'
+gem 'middleman-inliner'
+gem 'middleman-minify-html'
+gem 'middleman-imageoptim'
 
 gem 'bourbon';
 gem 'bitters';
