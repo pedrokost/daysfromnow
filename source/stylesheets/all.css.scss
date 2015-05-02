@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "bourbon";
+
+
+
+$darkgrey: #333333;
+$lessdarkgrey: #404040;
+$lightblue: #00C6D0;
+$dirtywhite: #E8E8E8;
+$yellow: #F8D300;
+
+
+body {
+  background: #d4d4d4 url("../images/background.png");
+  text-align: center;
+  font-family: 'Dancing Script', Helvetica, Arial, sans-serif;
+  color: $darkgrey;
+}
+
+
+.inputbox {
+  font-size: 90px;
+  background: $lightblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  line-height: 70vh;
+}
+
+.outputbox {
+  background: $yellow;
+  font-size: 150px;
+  position: fixed;
+  top: 70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 30vh;
+}
+
+
+.number input {
+  background: transparent;
+  color: $lessdarkgrey;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  width: 2em;
+  border-bottom: 5px solid $lessdarkgrey;
+  text-align: right;
+}
+
+.type select {
+  border: none;
+  color: $lessdarkgrey;
+  border-bottom: 5px solid $lessdarkgrey;
+  background: transparent;
+  outline: 0;
+  text-align: center;
+}
+
+.type select option {
+  background: $lightblue;
+  box-shadow: 3px 3px 3px white;
+}
+
+/*.from {
+  border-bottom: 5px solid black;
+  cursor: pointer;
+}*/

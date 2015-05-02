@@ -6,6 +6,10 @@ gem "middleman", "~>3.3.10"
 
 gem 'middleman-gh-pages'
 
+gem 'bourbon';
+gem 'bitters';
+gem 'neat';
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
