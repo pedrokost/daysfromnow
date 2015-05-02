@@ -11,7 +11,6 @@ $yellow: #F8D300;
 
 
 body {
-  background: #d4d4d4 url("../images/background.png");
   text-align: center;
   font-family: 'Dancing Script', Helvetica, Arial, sans-serif;
   color: $darkgrey;
@@ -26,8 +25,8 @@ body {
   }
 
   background: $lightblue;
-  line-height: 70vh;
-  height: 70vh;
+  line-height: calc(70vh - 70px);
+  height: calc(70vh - 70px);
 }
 
 .outputbox {
@@ -96,4 +95,10 @@ ins {
   /*margin-left: 50%;*/
   /*transform: translateX(-50%);*/
   /*position: absolute;*/
+}
+
+.ads {
+  height: 70px;
+  width: 100%;
+  background: $lightblue;
 }
