@@ -299,6 +299,6 @@ input[type=number]:hover, select:hover {
 
 /* line 95, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 ins {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  position: absolute; }
+  /*margin-left: 50%;*/
+  /*transform: translateX(-50%);*/
+  /*position: absolute;*/ }
