@@ -28,6 +28,6 @@ jQuery.noConflict();
 	$num.change(updateTime);
 	$type.change(updateTime);
 
-	$num.on('keydown', updateTime);
+	$num.on('keyup', updateTime);
 
 })(jQuery); 
