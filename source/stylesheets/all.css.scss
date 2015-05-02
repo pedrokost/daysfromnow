@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "bourbon";
-
-
+@import "base/base";
+@import 'neat';
 
 $darkgrey: #333333;
 $lessdarkgrey: #404040;
@@ -19,46 +19,71 @@ body {
 
 
 .inputbox {
-  font-size: 90px;
+  font-size: 40px;
+
+  @include media($medium-screen-up) {
+    font-size: 90px;
+  }
+
   background: $lightblue;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70%;
   line-height: 70vh;
+  height: 70vh;
 }
 
 .outputbox {
   background: $yellow;
-  font-size: 150px;
-  position: fixed;
-  top: 70%;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  font-size: 30px;
+
   line-height: 30vh;
+  height: 30vh;
+
+  @include media($medium-screen-up) {
+    font-size: 120px;
+  }
 }
 
 
 .number input {
+  display: inline;
   background: transparent;
-  color: $lessdarkgrey;
   border: none;
   outline: 0;
   display: inline-block;
   width: 2em;
-  border-bottom: 5px solid $lessdarkgrey;
+  border-bottom: 5px solid $darkgrey;
   text-align: right;
+  font-family: $fancy-font-family;
+
+  border-radius: 0; 
+  box-shadow: none; 
+  box-sizing: border-box; 
+  font-size: inherit; 
+  margin-bottom: inherit; 
+  padding: inherit; 
+  transition: none; 
 }
 
 .type select {
+  font-family: $fancy-font-family;
+  display: inline;
   border: none;
-  color: $lessdarkgrey;
-  border-bottom: 5px solid $lessdarkgrey;
+  border-bottom: 5px solid $darkgrey;
   background: transparent;
   outline: 0;
   text-align: center;
+}
+
+input[type=number], select {
+
+  &:focus, &:active {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none;
+  }
+
+  &:hover {
+    border-color: #477dca;
+  }
 }
 
 .type select option {
@@ -66,7 +91,9 @@ body {
   box-shadow: 3px 3px 3px white;
 }
 
-/*.from {
-  border-bottom: 5px solid black;
-  cursor: pointer;
-}*/
+
+ins {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
