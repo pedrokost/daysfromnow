@@ -227,34 +227,33 @@ html {
 
 /* line 13, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 body {
-  background: #d4d4d4 url("../images/background.png");
   text-align: center;
   font-family: 'Dancing Script', Helvetica, Arial, sans-serif;
   color: #333333; }
 
-/* line 21, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 20, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 .inputbox {
   font-size: 40px;
   background: #00C6D0;
-  line-height: 70vh;
-  height: 70vh; }
+  line-height: calc(70vh - 70px);
+  height: calc(70vh - 70px); }
   @media screen and (min-width: 40em) {
-    /* line 21, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+    /* line 20, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
     .inputbox {
       font-size: 90px; } }
 
-/* line 33, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 32, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 .outputbox {
   background: #F8D300;
   font-size: 30px;
   line-height: 30vh;
   height: 30vh; }
   @media screen and (min-width: 40em) {
-    /* line 33, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+    /* line 32, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
     .outputbox {
       font-size: 120px; } }
 
-/* line 46, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 45, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 .number input {
   display: inline;
   background: transparent;
@@ -273,7 +272,7 @@ body {
   padding: inherit;
   transition: none; }
 
-/* line 66, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 65, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 .type select {
   font-family: "Dancing Script", Helvetica, Arial, sans-serif;
   display: inline;
@@ -283,22 +282,28 @@ body {
   outline: 0;
   text-align: center; }
 
-/* line 78, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 77, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 input[type=number]:focus, input[type=number]:active, select:focus, select:active {
   border-color: #477dca;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
   outline: none; }
-/* line 84, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 83, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 input[type=number]:hover, select:hover {
   border-color: #477dca; }
 
-/* line 89, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 88, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 .type select option {
   background: #00C6D0;
   box-shadow: 3px 3px 3px white; }
 
-/* line 95, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+/* line 94, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
 ins {
   /*margin-left: 50%;*/
   /*transform: translateX(-50%);*/
   /*position: absolute;*/ }
+
+/* line 100, /home/pedro/Dropbox/Websites/daysfromnow/source/stylesheets/all.css.scss */
+.ads {
+  height: 70px;
+  width: 100%;
+  background: #00C6D0; }
